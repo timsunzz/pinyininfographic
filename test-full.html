@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>完整API测试 - 轮询结果</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f5f5f5;
+            border-radius: 4px;
+            white-space: pre-wrap;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .error {
+            color: red;
+        }
+        .success {
+            color: green;
+        }
+        #imageResult {
+            margin-top: 20px;
+            text-align: center;
+        }
+        #imageResult img {
+            max-width: 100%;
+            max-height: 600px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>完整API测试 - 包含轮询</h1>
+
+    <div class="form-group">
+        <label for="apiKey">API Key:</label>
+        <input type="password" id="apiKey" placeholder="输入您的Replicate API Key">
+    </div>
+
+    <div class="form-group">
+        <label for="prompt">Prompt:</label>
+        <textarea id="prompt" rows="8">请生成一张儿童识字小报《超市》，竖版 A4，学习小报版式，适合 5–9 岁孩子 认字与看图识物。
+
+**顶部居中大标题**：《走进超市》
+
+**场景内容**：卡通插画风的超市场景，包含收银员、货架、购物车、苹果、牛奶、面包等物品，每个物品都要有中文识字标签（拼音+汉字）。
+
+**风格要求**：儿童绘本风，色彩明亮温暖，文字清晰可读。</textarea>
+    </div>
+
+    <button id="testBtn" onclick="testAPI()">创建并轮询</button>
+    <button id="stopBtn" onclick="stopPolling()" style="display:none;">停止轮询</button>
+
+    <div id="result"></div>
+    <div id="imageResult"></div>
+
+    <script>
+        let pollingInterval = null;
+        let currentPredictionId = null;
+
+        async function testAPI() {
+            const apiKey = document.getElementById('apiKey').value.trim();
+            const prompt = document.getElementById('prompt').value.trim();
+            const result = document.getElementById('result');
+            const imageResult = document.getElementById('imageResult');
+            const testBtn = document.getElementById('testBtn');
+            const stopBtn = document.getElementById('stopBtn');
+
+            if (!apiKey) {
+                result.innerHTML = '<div class="error">请输入API Key</div>';
+                return;
+            }
+
+            if (!apiKey.startsWith('r8_')) {
+                result.innerHTML = '<div class="error">API Key格式错误，应以r8_开头</div>';
+                return;
+            }
+
+            testBtn.disabled = true;
+            stopBtn.style.display = 'inline-block';
+            result.textContent = '正在创建Prediction...\n';
+            imageResult.innerHTML = '';
+
+            try {
+                // 创建prediction
+                const response = await fetch('/api/replicate', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        apiKey: apiKey,
+                        endpoint: '/v1/predictions',
+                        method: 'POST',
+                        body: {
+                            // Nano Banana Pro的正确版本ID
+                            version: "8ee6ef26f683603f6f2aef9bd34a61a8f9c1a45a2b0f5c6063a9b7c9e1d4f8b",
+                            input: {
+                                prompt: prompt,
+                                aspect_ratio: "3:4",
+                                resolution: "4K",
+                                output_format: "png",
+                                safety_filter_level: "block_only_high"
+                            }
+                        }
+                    })
+                });
+
+                const data = await response.json();
+
+                if (!response.ok) {
+                    throw new Error(data.error || data.detail || '创建失败');
+                }
+
+                currentPredictionId = data.id;
+                result.textContent += '✅ Prediction创建成功!\n';
+                result.textContent += 'ID: ' + data.id + '\n';
+                result.textContent += '状态: ' + data.status + '\n';
+                result.textContent += '\n开始轮询结果...\n';
+
+                // 开始轮询
+                startPolling(apiKey, data.id);
+
+            } catch (error) {
+                result.innerHTML = '<div class="error">错误: ' + error.message + '</div>';
+                testBtn.disabled = false;
+                stopBtn.style.display = 'none';
+            }
+        }
+
+        function startPolling(apiKey, predictionId) {
+            pollingInterval = setInterval(async () => {
+                try {
+                    const response = await fetch(`/api/replicate/prediction/${predictionId}?apiKey=${encodeURIComponent(apiKey)}`);
+                    const data = await response.json();
+
+                    const result = document.getElementById('result');
+                    result.textContent += `\n[${new Date().toLocaleTimeString()}] 状态: ${data.status}`;
+
+                    if (data.status === 'succeeded') {
+                        result.textContent += '\n✅ 生成成功!\n';
+                        result.textContent += '图片URL: ' + data.output + '\n';
+
+                        // 显示图片
+                        const imageResult = document.getElementById('imageResult');
+                        imageResult.innerHTML = `<h3>生成的图片:</h3><img src="${data.output}" alt="生成的图片" onload="window.scrollBy(0, 200)">`;
+
+                        stopPolling();
+                    } else if (data.status === 'failed') {
+                        result.textContent += '\n❌ 生成失败!\n';
+                        result.textContent += '错误: ' + (data.error || '未知错误') + '\n';
+                        stopPolling();
+                    }
+
+                } catch (error) {
+                    console.error('轮询错误:', error);
+                    const result = document.getElementById('result');
+                    result.textContent += '\n❌ 轮询出错: ' + error.message;
+                }
+            }, 3000); // 每3秒轮询一次
+        }
+
+        function stopPolling() {
+            if (pollingInterval) {
+                clearInterval(pollingInterval);
+                pollingInterval = null;
+            }
+
+            document.getElementById('testBtn').disabled = false;
+            document.getElementById('stopBtn').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

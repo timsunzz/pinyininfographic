@@ -1,0 +1,522 @@
+{
+  "超市": {
+    "核心角色与设施": [
+      {"word": "收银员", "pinyin": "shōu yín yuán", "category": "person"},
+      {"word": "货架", "pinyin": "huò jià", "category": "facility"},
+      {"word": "购物车", "pinyin": "gòu wù chē", "category": "facility"},
+      {"word": "收银台", "pinyin": "shōu yín tái", "category": "facility"},
+      {"word": "购物篮", "pinyin": "gòu wù lán", "category": "facility"}
+    ],
+    "常见物品/工具": [
+      {"word": "苹果", "pinyin": "píng guǒ", "category": "item"},
+      {"word": "牛奶", "pinyin": "niú nǎi", "category": "item"},
+      {"word": "面包", "pinyin": "miàn bāo", "category": "item"},
+      {"word": "鸡蛋", "pinyin": "jī dàn", "category": "item"},
+      {"word": "香蕉", "pinyin": "xiāng jiāo", "category": "item"},
+      {"word": "饼干", "pinyin": "bǐng gān", "category": "item"},
+      {"word": "果汁", "pinyin": "guǒ zhī", "category": "item"},
+      {"word": "巧克力", "pinyin": "qiǎo kè lì", "category": "item"}
+    ],
+    "环境与装饰": [
+      {"word": "出口", "pinyin": "chū kǒu", "category": "environment"},
+      {"word": "入口", "pinyin": "rù kǒu", "category": "environment"},
+      {"word": "灯", "pinyin": "dēng", "category": "environment"},
+      {"word": "墙", "pinyin": "qiáng", "category": "environment"},
+      {"word": "地板", "pinyin": "dì bǎn", "category": "environment"}
+    ]
+  },
+  "医院": {
+    "核心角色与设施": [
+      {"word": "医生", "pinyin": "yī shēng", "category": "person"},
+      {"word": "护士", "pinyin": "hù shi", "category": "person"},
+      {"word": "病床", "pinyin": "bìng chuáng", "category": "facility"},
+      {"word": "挂号处", "pinyin": "guà hào chù", "category": "facility"},
+      {"word": "药房", "pinyin": "yào fáng", "category": "facility"}
+    ],
+    "常见物品/工具": [
+      {"word": "听诊器", "pinyin": "tīng zhěn qì", "category": "item"},
+      {"word": "体温计", "pinyin": "tǐ wēn jì", "category": "item"},
+      {"word": "针筒", "pinyin": "zhēn tǒng", "category": "item"},
+      {"word": "药片", "pinyin": "yào piàn", "category": "item"},
+      {"word": "纱布", "pinyin": "shā bù", "category": "item"},
+      {"word": "拐杖", "pinyin": "guǎi zhàng", "category": "item"},
+      {"word": "口罩", "pinyin": "kǒu zhào", "category": "item"},
+      {"word": "血压计", "pinyin": "xuè yā jì", "category": "item"}
+    ],
+    "环境与装饰": [
+      {"word": "病房", "pinyin": "bìng fáng", "category": "environment"},
+      {"word": "走廊", "pinyin": "zǒu láng", "category": "environment"},
+      {"word": "窗户", "pinyin": "chuāng hu", "category": "environment"},
+      {"word": "门", "pinyin": "mén", "category": "environment"},
+      {"word": "楼梯", "pinyin": "lóu tī", "category": "environment"}
+    ]
+  },
+  "公园": {
+    "核心角色与设施": [
+      {"word": "园丁", "pinyin": "yuán dīng", "category": "person"},
+      {"word": "长椅", "pinyin": "cháng yǐ", "category": "facility"},
+      {"word": "秋千", "pinyin": "qiū qiān", "category": "facility"},
+      {"word": "滑梯", "pinyin": "huá tī", "category": "facility"},
+      {"word": "凉亭", "pinyin": "liáng tíng", "category": "facility"}
+    ],
+    "常见物品/工具": [
+      {"word": "花", "pinyin": "huā", "category": "item"},
+      {"word": "树", "pinyin": "shù", "category": "item"},
+      {"word": "草地", "pinyin": "cǎo dì", "category": "item"},
+      {"word": "气球", "pinyin": "qì qiú", "category": "item"},
+      {"word": "风筝", "pinyin": "fēng zheng", "category": "item"},
+      {"word": "足球", "pinyin": "zú qiú", "category": "item"},
+      {"word": "自行车", "pinyin": "zì xíng chē", "category": "item"},
+      {"word": "冰淇淋", "pinyin": "bīng qí lín", "category": "item"}
+    ],
+    "环境与装饰": [
+      {"word": "小路", "pinyin": "xiǎo lù", "category": "environment"},
+      {"word": "池塘", "pinyin": "chí táng", "category": "environment"},
+      {"word": "假山", "pinyin": "jiǎ shān", "category": "environment"},
+      {"word": "喷泉", "pinyin": "pēn quán", "category": "environment"},
+      {"word": "路灯", "pinyin": "lù dēng", "category": "environment"}
+    ]
+  },
+  "学校": {
+    "核心角色与设施": [
+      {"word": "老师", "pinyin": "lǎo shī", "category": "person"},
+      {"word": "学生", "pinyin": "xué sheng", "category": "person"},
+      {"word": "黑板", "pinyin": "hēi bǎn", "category": "facility"},
+      {"word": "课桌", "pinyin": "kè zhuō", "category": "facility"},
+      {"word": "讲台", "pinyin": "jiǎng tái", "category": "facility"}
+    ],
+    "常见物品/工具": [
+      {"word": "书本", "pinyin": "shū běn", "category": "item"},
+      {"word": "铅笔", "pinyin": "qiān bǐ", "category": "item"},
+      {"word": "橡皮", "pinyin": "xiàng pí", "category": "item"},
+      {"word": "尺子", "pinyin": "chǐ zi", "category": "item"},
+      {"word": "书包", "pinyin": "shū bāo", "category": "item"},
+      {"word": "地球仪", "pinyin": "dì qiú yí", "category": "item"},
+      {"word": "粉笔", "pinyin": "fěn chǐ", "category": "item"},
+      {"word": "课本", "pinyin": "kè běn", "category": "item"}
+    ],
+    "环境与装饰": [
+      {"word": "教室", "pinyin": "jiào shì", "category": "environment"},
+      {"word": "操场", "pinyin": "cāo chǎng", "category": "environment"},
+      {"word": "图书馆", "pinyin": "tú shū guǎn", "category": "environment"},
+      {"word": "食堂", "pinyin": "shí táng", "category": "environment"},
+      {"word": "大门", "pinyin": "dà mén", "category": "environment"}
+    ]
+  },
+  "动物园": {
+    "核心角色与设施": [
+      {"word": "饲养员", "pinyin": "sì yǎng yuán", "category": "person"},
+      {"word": "笼子", "pinyin": "lóng zi", "category": "facility"},
+      {"word": "围栏", "pinyin": "wéi lán", "category": "facility"},
+      {"word": "池塘", "pinyin": "chí táng", "category": "facility"},
+      {"word": "鸟巢", "pinyin": "niǎo cháo", "category": "facility"}
+    ],
+    "常见物品/工具": [
+      {"word": "狮子", "pinyin": "shī zi", "category": "animal"},
+      {"word": "大象", "pinyin": "dà xiàng", "category": "animal"},
+      {"word": "猴子", "pinyin": "hóu zi", "category": "animal"},
+      {"word": "熊猫", "pinyin": "xióng māo", "category": "animal"},
+      {"word": "长颈鹿", "pinyin": "cháng jǐng lù", "category": "animal"},
+      {"word": "企鹅", "pinyin": "qǐ é", "category": "animal"},
+      {"word": "老虎", "pinyin": "lǎo hǔ", "category": "animal"},
+      {"word": "斑马", "pinyin": "bān mǎ", "category": "animal"}
+    ],
+    "环境与装饰": [
+      {"word": "草地", "pinyin": "cǎo dì", "category": "environment"},
+      {"word": "树木", "pinyin": "shù mù", "category": "environment"},
+      {"word": "岩石", "pinyin": "yán shí", "category": "environment"},
+      {"word": "小桥", "pinyin": "xiǎo qiáo", "category": "environment"},
+      {"word": "指示牌", "pinyin": "zhǐ shì pái", "category": "environment"}
+    ]
+  },
+  "消防局": {
+    "核心角色与设施": [
+      {"word": "消防员", "pinyin": "xiāo fáng yuán", "category": "person"},
+      {"word": "消防车", "pinyin": "xiāo fáng chē", "category": "facility"},
+      {"word": "消防栓", "pinyin": "xiāo fáng shuān", "category": "facility"},
+      {"word": "车库", "pinyin": "chē kù", "category": "facility"},
+      {"word": "瞭望塔", "pinyin": "liào wàng tǎ", "category": "facility"}
+    ],
+    "常见物品/工具": [
+      {"word": "水管", "pinyin": "shuǐ guǎn", "category": "item"},
+      {"word": "斧头", "pinyin": "fǔ tou", "category": "item"},
+      {"word": "头盔", "pinyin": "tóu kuī", "category": "item"},
+      {"word": "梯子", "pinyin": "tī zi", "category": "item"},
+      {"word": "灭火器", "pinyin": "miè huǒ qì", "category": "item"},
+      {"word": "警报器", "pinyin": "jǐng bào qì", "category": "item"},
+      {"word": "氧气瓶", "pinyin": "yǎng qì píng", "category": "item"},
+      {"word": "手电筒", "pinyin": "shǒu diàn tǒng", "category": "item"}
+    ],
+    "环境与装饰": [
+      {"word": "训练场", "pinyin": "xùn liàn chǎng", "category": "environment"},
+      {"word": "宿舍", "pinyin": "sù shè", "category": "environment"},
+      {"word": "食堂", "pinyin": "shí táng", "category": "environment"},
+      {"word": "警铃", "pinyin": "jǐng líng", "category": "environment"},
+      {"word": "红灯", "pinyin": "hóng dēng", "category": "environment"}
+    ]
+  },
+  "邮局": {
+    "核心角色与设施": [
+      {"word": "邮递员", "pinyin": "yóu dì yuán", "category": "person"},
+      {"word": "邮筒", "pinyin": "yóu tǒng", "category": "facility"},
+      {"word": "柜台", "pinyin": "guì tái", "category": "facility"},
+      {"word": "信箱", "pinyin": "xìn xiāng", "category": "facility"},
+      {"word": "包裹架", "pinyin": "bāo guǒ jià", "category": "facility"}
+    ],
+    "常见物品/工具": [
+      {"word": "信封", "pinyin": "xìn fēng", "category": "item"},
+      {"word": "邮票", "pinyin": "yóu piào", "category": "item"},
+      {"word": "明信片", "pinyin": "míng xìn piàn", "category": "item"},
+      {"word": "包裹", "pinyin": "bāo guǒ", "category": "item"},
+      {"word": "信纸", "pinyin": "xìn zhǐ", "category": "item"},
+      {"word": "胶水", "pinyin": "jiāo shuǐ", "category": "item"},
+      {"word": "钢笔", "pinyin": "gāng bǐ", "category": "item"},
+      {"word": "印章", "pinyin": "yìn zhāng", "category": "item"}
+    ],
+    "环境与装饰": [
+      {"word": "大厅", "pinyin": "dà tīng", "category": "environment"},
+      {"word": "窗户", "pinyin": "chuāng hu", "category": "environment"},
+      {"word": "时钟", "pinyin": "shí zhōng", "category": "environment"},
+      {"word": "排椅", "pinyin": "pái yǐ", "category": "environment"},
+      {"word": "招牌", "pinyin": "zhāo pái", "category": "environment"}
+    ]
+  },
+  "图书馆": {
+    "核心角色与设施": [
+      {"word": "图书管理员", "pinyin": "tú shū guǎn lǐ yuán", "category": "person"},
+      {"word": "书架", "pinyin": "shū jià", "category": "facility"},
+      {"word": "阅览室", "pinyin": "yuè lǎn shì", "category": "facility"},
+      {"word": "借书台", "pinyin": "jiè shū tái", "category": "facility"},
+      {"word": "电脑桌", "pinyin": "diàn nǎo zhuō", "category": "facility"}
+    ],
+    "常见物品/工具": [
+      {"word": "图书", "pinyin": "tú shū", "category": "item"},
+      {"word": "借书卡", "pinyin": "jiè shū kǎ", "category": "item"},
+      {"word": "书签", "pinyin": "shū qiān", "category": "item"},
+      {"word": "电脑", "pinyin": "diàn nǎo", "category": "item"},
+      {"word": "报纸", "pinyin": "bào zhǐ", "category": "item"},
+      {"word": "杂志", "pinyin": "zá zhì", "category": "item"},
+      {"word": "放大镜", "pinyin": "fàng dà jìng", "category": "item"},
+      {"word": "耳机", "pinyin": "ěr jī", "category": "item"}
+    ],
+    "环境与装饰": [
+      {"word": "安静区", "pinyin": "ān jìng qū", "category": "environment"},
+      {"word": "讨论区", "pinyin": "tǎo lùn qū", "category": "environment"},
+      {"word": "儿童角", "pinyin": "ér tóng jiǎo", "category": "environment"},
+      {"word": "沙发", "pinyin": "shā fā", "category": "environment"},
+      {"word": "台灯", "pinyin": "tái dēng", "category": "environment"}
+    ]
+  },
+  "博物馆": {
+    "核心角色与设施": [
+      {"word": "讲解员", "pinyin": "jiǎng jiě yuán", "category": "person"},
+      {"word": "展柜", "pinyin": "zhǎn guì", "category": "facility"},
+      {"word": "展厅", "pinyin": "zhǎn tīng", "category": "facility"},
+      {"word": "售票处", "pinyin": "shòu piào chù", "category": "facility"},
+      {"word": "存包处", "pinyin": "cún bāo chù", "category": "facility"}
+    ],
+    "常见物品/工具": [
+      {"word": "化石", "pinyin": "huà shí", "category": "item"},
+      {"word": "陶器", "pinyin": "táo qì", "category": "item"},
+      {"word": "画作", "pinyin": "huà zuò", "category": "item"},
+      {"word": "雕塑", "pinyin": "diāo sù", "category": "item"},
+      {"word": "青铜器", "pinyin": "qīng tóng qì", "category": "item"},
+      {"word": "瓷器", "pinyin": "cí qì", "category": "item"},
+      {"word": "古钱币", "pinyin": "gǔ qián bì", "category": "item"},
+      {"word": "地图", "pinyin": "dì tú", "category": "item"}
+    ],
+    "环境与装饰": [
+      {"word": "大门", "pinyin": "dà mén", "category": "environment"},
+      {"word": "走廊", "pinyin": "zǒu láng", "category": "environment"},
+      {"word": "楼梯", "pinyin": "lóu tī", "category": "environment"},
+      {"word": "灯光", "pinyin": "dēng guāng", "category": "environment"},
+      {"word": "指示牌", "pinyin": "zhǐ shì pái", "category": "environment"}
+    ]
+  },
+  "火车站": {
+    "核心角色与设施": [
+      {"word": "列车员", "pinyin": "liè chē yuán", "category": "person"},
+      {"word": "站台", "pinyin": "zhàn tái", "category": "facility"},
+      {"word": "候车室", "pinyin": "hòu chē shì", "category": "facility"},
+      {"word": "售票窗口", "pinyin": "shòu piào chuāng kǒu", "category": "facility"},
+      {"word": "检票口", "pinyin": "jiǎn piào kǒu", "category": "facility"}
+    ],
+    "常见物品/工具": [
+      {"word": "火车", "pinyin": "huǒ chē", "category": "item"},
+      {"word": "车票", "pinyin": "chē piào", "category": "item"},
+      {"word": "行李", "pinyin": "xíng li", "category": "item"},
+      {"word": "手提箱", "pinyin": "shǒu tí xiāng", "category": "item"},
+      {"word": "时刻表", "pinyin": "shí kè biǎo", "category": "item"},
+      {"word": "喇叭", "pinyin": "lǎ ba", "category": "item"},
+      {"word": "时钟", "pinyin": "shí zhōng", "category": "item"},
+      {"word": "地图", "pinyin": "dì tú", "category": "item"}
+    ],
+    "环境与装饰": [
+      {"word": "铁轨", "pinyin": "tiě guǐ", "category": "environment"},
+      {"word": "天桥", "pinyin": "tiān qiáo", "category": "environment"},
+      {"word": "地下通道", "pinyin": "dì xià tōng dào", "category": "environment"},
+      {"word": "座椅", "pinyin": "zuò yǐ", "category": "environment"},
+      {"word": "显示屏", "pinyin": "xiǎn shì píng", "category": "environment"}
+    ]
+  },
+  "餐厅": {
+    "核心角色与设施": [
+      {"word": "服务员", "pinyin": "fú wù yuán", "category": "person"},
+      {"word": "厨师", "pinyin": "chú shī", "category": "person"},
+      {"word": "餐桌", "pinyin": "cān zhuō", "category": "facility"},
+      {"word": "厨房", "pinyin": "chú fáng", "category": "facility"},
+      {"word": "收银台", "pinyin": "shōu yín tái", "category": "facility"}
+    ],
+    "常见物品/工具": [
+      {"word": "菜单", "pinyin": "cài dān", "category": "item"},
+      {"word": "碗", "pinyin": "wǎn", "category": "item"},
+      {"word": "筷子", "pinyin": "kuài zi", "category": "item"},
+      {"word": "勺子", "pinyin": "sháo zi", "category": "item"},
+      {"word": "盘子", "pinyin": "pán zi", "category": "item"},
+      {"word": "杯子", "pinyin": "bēi zi", "category": "item"},
+      {"word": "餐巾纸", "pinyin": "cān jīn zhǐ", "category": "item"},
+      {"word": "调料瓶", "pinyin": "tiáo liào píng", "category": "item"}
+    ],
+    "环境与装饰": [
+      {"word": "大门", "pinyin": "dà mén", "category": "environment"},
+      {"word": "窗户", "pinyin": "chuāng hu", "category": "environment"},
+      {"word": "吊灯", "pinyin": "diào dēng", "category": "environment"},
+      {"word": "壁画", "pinyin": "bì huà", "category": "environment"},
+      {"word": "植物", "pinyin": "zhí wù", "category": "environment"}
+    ]
+  },
+  "理发店": {
+    "核心角色与设施": [
+      {"word": "理发师", "pinyin": "lǐ fà shī", "category": "person"},
+      {"word": "理发椅", "pinyin": "lǐ fà yǐ", "category": "facility"},
+      {"word": "洗头池", "pinyin": "xǐ tóu chí", "category": "facility"},
+      {"word": "镜子", "pinyin": "jìng zi", "category": "facility"},
+      {"word": "等候区", "pinyin": "děng hòu qū", "category": "facility"}
+    ],
+    "常见物品/工具": [
+      {"word": "剪刀", "pinyin": "jiǎn dāo", "category": "item"},
+      {"word": "梳子", "pinyin": "shū zi", "category": "item"},
+      {"word": "吹风机", "pinyin": "chuī fēng jī", "category": "item"},
+      {"word": "剃刀", "pinyin": "tì dāo", "category": "item"},
+      {"word": "洗发水", "pinyin": "xǐ fà shuǐ", "category": "item"},
+      {"word": "护发素", "pinyin": "hù fà sù", "category": "item"},
+      {"word": "毛巾", "pinyin": "máo jīn", "category": "item"},
+      {"word": "围布", "pinyin": "wéi bù", "category": "item"}
+    ],
+    "环境与装饰": [
+      {"word": "地板", "pinyin": "dì bǎn", "category": "environment"},
+      {"word": "墙", "pinyin": "qiáng", "category": "environment"},
+      {"word": "天花板", "pinyin": "tiān huā bǎn", "category": "environment"},
+      {"word": "招牌", "pinyin": "zhāo pái", "category": "environment"},
+      {"word": "灯光", "pinyin": "dēng guāng", "category": "environment"}
+    ]
+  },
+  "玩具店": {
+    "核心角色与设施": [
+      {"word": "店员", "pinyin": "diàn yuán", "category": "person"},
+      {"word": "货架", "pinyin": "huò jià", "category": "facility"},
+      {"word": "展示柜", "pinyin": "zhǎn shì guì", "category": "facility"},
+      {"word": "收银台", "pinyin": "shōu yín tái", "category": "facility"},
+      {"word": "试玩区", "pinyin": "shì wán qū", "category": "facility"}
+    ],
+    "常见物品/工具": [
+      {"word": "积木", "pinyin": "jī mù", "category": "item"},
+      {"word": "娃娃", "pinyin": "wá wa", "category": "item"},
+      {"word": "汽车", "pinyin": "qì chē", "category": "item"},
+      {"word": "机器人", "pinyin": "jī qì rén", "category": "item"},
+      {"word": "皮球", "pinyin": "pí qiú", "category": "item"},
+      {"word": "拼图", "pinyin": "pīn tú", "category": "item"},
+      {"word": "玩具枪", "pinyin": "wán jù qiāng", "category": "item"},
+      {"word": "模型", "pinyin": "mó xíng", "category": "item"}
+    ],
+    "环境与装饰": [
+      {"word": "彩灯", "pinyin": "cǎi dēng", "category": "environment"},
+      {"word": "气球", "pinyin": "qì qiú", "category": "environment"},
+      {"word": "海报", "pinyin": "hǎi bào", "category": "environment"},
+      {"word": "地板", "pinyin": "dì bǎn", "category": "environment"},
+      {"word": "装饰品", "pinyin": "zhuāng shì pǐn", "category": "environment"}
+    ]
+  },
+  "水果店": {
+    "核心角色与设施": [
+      {"word": "售货员", "pinyin": "shòu huò yuán", "category": "person"},
+      {"word": "水果摊", "pinyin": "shuǐ guǒ tān", "category": "facility"},
+      {"word": "货架", "pinyin": "huò jià", "category": "facility"},
+      {"word": "电子秤", "pinyin": "diàn zǐ chèng", "category": "facility"},
+      {"word": "收银台", "pinyin": "shōu yín tái", "category": "facility"}
+    ],
+    "常见物品/工具": [
+      {"word": "苹果", "pinyin": "píng guǒ", "category": "item"},
+      {"word": "香蕉", "pinyin": "xiāng jiāo", "category": "item"},
+      {"word": "橙子", "pinyin": "chéng zi", "category": "item"},
+      {"word": "葡萄", "pinyin": "pú tao", "category": "item"},
+      {"word": "西瓜", "pinyin": "xī guā", "category": "item"},
+      {"word": "草莓", "pinyin": "cǎo méi", "category": "item"},
+      {"word": "芒果", "pinyin": "máng guǒ", "category": "item"},
+      {"word": "梨子", "pinyin": "lí zi", "category": "item"}
+    ],
+    "环境与装饰": [
+      {"word": "遮阳棚", "pinyin": "zhē yáng péng", "category": "environment"},
+      {"word": "价签", "pinyin": "jià qiān", "category": "environment"},
+      {"word": "招牌", "pinyin": "zhāo pái", "category": "environment"},
+      {"word": "篮子", "pinyin": "lán zi", "category": "environment"},
+      {"word": "塑料袋", "pinyin": "sù liào dài", "category": "environment"}
+    ]
+  },
+  "面包店": {
+    "核心角色与设施": [
+      {"word": "面包师", "pinyin": "miàn bāo shī", "category": "person"},
+      {"word": "烤箱", "pinyin": "kǎo xiāng", "category": "facility"},
+      {"word": "展示柜", "pinyin": "zhǎn shì guì", "category": "facility"},
+      {"word": "收银台", "pinyin": "shōu yín tái", "category": "facility"},
+      {"word": "操作台", "pinyin": "cāo zuò tái", "category": "facility"}
+    ],
+    "常见物品/工具": [
+      {"word": "面包", "pinyin": "miàn bāo", "category": "item"},
+      {"word": "蛋糕", "pinyin": "dàn gāo", "category": "item"},
+      {"word": "饼干", "pinyin": "bǐng gān", "category": "item"},
+      {"word": "甜甜圈", "pinyin": "tián tián quān", "category": "item"},
+      {"word": "蛋挞", "pinyin": "dàn tà", "category": "item"},
+      {"word": "披萨", "pinyin": "pī sà", "category": "item"},
+      {"word": "布丁", "pinyin": "bù dīng", "category": "item"},
+      {"word": "泡芙", "pinyin": "pào fú", "category": "item"}
+    ],
+    "环境与装饰": [
+      {"word": "面粉", "pinyin": "miàn fěn", "category": "environment"},
+      {"word": "糖罐", "pinyin": "táng guàn", "category": "environment"},
+      {"word": "牛奶", "pinyin": "niú nǎi", "category": "environment"},
+      {"word": "鸡蛋", "pinyin": "jī dàn", "category": "environment"},
+      {"word": "黄油", "pinyin": "huáng yóu", "category": "environment"}
+    ]
+  },
+  "药店": {
+    "核心角色与设施": [
+      {"word": "药剂师", "pinyin": "yào jì shī", "category": "person"},
+      {"word": "药柜", "pinyin": "yào guì", "category": "facility"},
+      {"word": "收银台", "pinyin": "shōu yín tái", "category": "facility"},
+      {"word": "咨询台", "pinyin": "zī xún tái", "category": "facility"},
+      {"word": "冷藏柜", "pinyin": "lěng cáng guì", "category": "facility"}
+    ],
+    "常见物品/工具": [
+      {"word": "药片", "pinyin": "yào piàn", "category": "item"},
+      {"word": "胶囊", "pinyin": "jiāo náng", "category": "item"},
+      {"word": "药水", "pinyin": "yào shuǐ", "category": "item"},
+      {"word": "创可贴", "pinyin": "chuāng kě tiē", "category": "item"},
+      {"word": "温度计", "pinyin": "wēn dù jì", "category": "item"},
+      {"word": "棉签", "pinyin": "mián qiān", "category": "item"},
+      {"word": "口罩", "pinyin": "kǒu zhào", "category": "item"},
+      {"word": "酒精", "pinyin": "jiǔ jīng", "category": "item"}
+    ],
+    "环境与装饰": [
+      {"word": "处方单", "pinyin": "chǔ fāng dān", "category": "environment"},
+      {"word": "说明书", "pinyin": "shuō míng shū", "category": "environment"},
+      {"word": "十字标志", "pinyin": "shí zì biāo zhì", "category": "environment"},
+      {"word": "椅子", "pinyin": "yǐ zi", "category": "environment"},
+      {"word": "柜台", "pinyin": "guì tái", "category": "environment"}
+    ]
+  },
+  "银行": {
+    "核心角色与设施": [
+      {"word": "银行职员", "pinyin": "yín háng zhí yuán", "category": "person"},
+      {"word": "ATM机", "pinyin": "ATM jī", "category": "facility"},
+      {"word": "柜台", "pinyin": "guì tái", "category": "facility"},
+      {"word": "保险柜", "pinyin": "bǎo xiǎn guì", "category": "facility"},
+      {"word": "排队机", "pinyin": "pái duì jī", "category": "facility"}
+    ],
+    "常见物品/工具": [
+      {"word": "银行卡", "pinyin": "yín háng kǎ", "category": "item"},
+      {"word": "存折", "pinyin": "cún zhé", "category": "item"},
+      {"word": "硬币", "pinyin": "yìng bì", "category": "item"},
+      {"word": "纸币", "pinyin": "zhǐ bì", "category": "item"},
+      {"word": "计算器", "pinyin": "jì suàn qì", "category": "item"},
+      {"word": "印泥", "pinyin": "yìn ní", "category": "item"},
+      {"word": "印章", "pinyin": "yìn zhāng", "category": "item"},
+      {"word": "点钞机", "pinyin": "diǎn chāo jī", "category": "item"}
+    ],
+    "环境与装饰": [
+      {"word": "叫号屏", "pinyin": "jiào hào píng", "category": "environment"},
+      {"word": "摄像头", "pinyin": "shè xiàng tóu", "category": "environment"},
+      {"word": "等候椅", "pinyin": "děng hòu yǐ", "category": "environment"},
+      {"word": "玻璃窗", "pinyin": "bō li chuāng", "category": "environment"},
+      {"word": "标志牌", "pinyin": "biāo zhì pái", "category": "environment"}
+    ]
+  },
+  "电影院": {
+    "核心角色与设施": [
+      {"word": "检票员", "pinyin": "jiǎn piào yuán", "category": "person"},
+      {"word": "放映室", "pinyin": "fàng yìng shì", "category": "facility"},
+      {"word": "售票处", "pinyin": "shòu piào chù", "category": "facility"},
+      {"word": "银幕", "pinyin": "yín mù", "category": "facility"},
+      {"word": "座位", "pinyin": "zuò wèi", "category": "facility"}
+    ],
+    "常见物品/工具": [
+      {"word": "电影票", "pinyin": "diàn yǐng piào", "category": "item"},
+      {"word": "3D眼镜", "pinyin": "3D yǎn jìng", "category": "item"},
+      {"word": "爆米花", "pinyin": "bào mǐ huā", "category": "item"},
+      {"word": "可乐", "pinyin": "kě lè", "category": "item"},
+      {"word": "海报", "pinyin": "hǎi bào", "category": "item"},
+      {"word": "放映机", "pinyin": "fàng yìng jī", "category": "item"},
+      {"word": "音响", "pinyin": "yīn xiǎng", "category": "item"},
+      {"word": "遥控器", "pinyin": "yáo kòng qì", "category": "item"}
+    ],
+    "环境与装饰": [
+      {"word": "走廊", "pinyin": "zǒu láng", "category": "environment"},
+      {"word": "台阶", "pinyin": "tái jiē", "category": "environment"},
+      {"word": "紧急出口", "pinyin": "jǐn jí chū kǒu", "category": "environment"},
+      {"word": "灯光", "pinyin": "dēng guāng", "category": "environment"},
+      {"word": "地毯", "pinyin": "dì tǎn", "category": "environment"}
+    ]
+  },
+  "游泳池": {
+    "核心角色与设施": [
+      {"word": "救生员", "pinyin": "jiù shēng yuán", "category": "person"},
+      {"word": "泳池", "pinyin": "yóu chí", "category": "facility"},
+      {"word": "更衣室", "pinyin": "gēng yī shì", "category": "facility"},
+      {"word": "淋浴区", "pinyin": "lín yù qū", "category": "facility"},
+      {"word": "跳台", "pinyin": "tiào tái", "category": "facility"}
+    ],
+    "常见物品/工具": [
+      {"word": "游泳圈", "pinyin": "yóu yǒng quān", "category": "item"},
+      {"word": "泳镜", "pinyin": "yǒng jìng", "category": "item"},
+      {"word": "泳帽", "pinyin": "yǒng mào", "category": "item"},
+      {"word": "浮板", "pinyin": "fú bǎn", "category": "item"},
+      {"word": "毛巾", "pinyin": "máo jīn", "category": "item"},
+      {"word": "拖鞋", "pinyin": "tuō xié", "category": "item"},
+      {"word": "防晒霜", "pinyin": "fáng shài shuāng", "category": "item"},
+      {"word": "水枪", "pinyin": "shuǐ qiāng", "category": "item"}
+    ],
+    "环境与装饰": [
+      {"word": "水深标记", "pinyin": "shuǐ shēn biāo jì", "category": "environment"},
+      {"word": "防滑垫", "pinyin": "fáng huá diàn", "category": "environment"},
+      {"word": "遮阳伞", "pinyin": "zhē yáng sǎn", "category": "environment"},
+      {"word": "躺椅", "pinyin": "tǎng yǐ", "category": "environment"},
+      {"word": "储物柜", "pinyin": "chǔ wù guì", "category": "environment"}
+    ]
+  },
+  "操场": {
+    "核心角色与设施": [
+      {"word": "体育老师", "pinyin": "tǐ yù lǎo shī", "category": "person"},
+      {"word": "跑道", "pinyin": "pǎo dào", "category": "facility"},
+      {"word": "足球场", "pinyin": "zú qiú chǎng", "category": "facility"},
+      {"word": "篮球架", "pinyin": "lán qiú jià", "category": "facility"},
+      {"word": "看台", "pinyin": "kàn tái", "category": "facility"}
+    ],
+    "常见物品/工具": [
+      {"word": "足球", "pinyin": "zú qiú", "category": "item"},
+      {"word": "篮球", "pinyin": "lán qiú", "category": "item"},
+      {"word": "排球", "pinyin": "pái qiú", "category": "item"},
+      {"word": "跳绳", "pinyin": "tiào shéng", "category": "item"},
+      {"word": "毽子", "pinyin": "jiàn zi", "category": "item"},
+      {"word": "哑铃", "pinyin": "yǎ líng", "category": "item"},
+      {"word": "秒表", "pinyin": "miǎo biǎo", "category": "item"},
+      {"word": "哨子", "pinyin": "shào zi", "category": "item"}
+    ],
+    "环境与装饰": [
+      {"word": "草地", "pinyin": "cǎo dì", "category": "environment"},
+      {"word": "沙坑", "pinyin": "shā kēng", "category": "environment"},
+      {"word": "单杠", "pinyin": "dān gàng", "category": "environment"},
+      {"word": "双杠", "pinyin": "shuāng gàng", "category": "environment"},
+      {"word": "球门", "pinyin": "qiú mén", "category": "environment"}
+    ]
+  }
+}

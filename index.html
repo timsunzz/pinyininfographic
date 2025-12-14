@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>儿童识字小报生成器</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">🎨 儿童识字小报生成器</h1>
+            <p class="subtitle">为孩子制作有趣的识字学习材料</p>
+        </header>
+
+        <main class="main-content">
+            <!-- 输入区域 -->
+            <section class="input-section">
+                <div class="input-group">
+                    <label for="theme">选择或输入场景主题：</label>
+                    <div class="scene-selector">
+                        <div class="preset-scenes">
+                            <button class="scene-btn" data-theme="超市">🛒 超市</button>
+                            <button class="scene-btn" data-theme="医院">🏥 医院</button>
+                            <button class="scene-btn" data-theme="公园">🌳 公园</button>
+                            <button class="scene-btn" data-theme="学校">🏫 学校</button>
+                            <button class="scene-btn" data-theme="动物园">🦁 动物园</button>
+                            <button class="scene-btn" data-theme="消防局">🚒 消防局</button>
+                            <button class="scene-btn" data-theme="邮局">📮 邮局</button>
+                            <button class="scene-btn" data-theme="图书馆">📚 图书馆</button>
+                            <button class="scene-btn" data-theme="博物馆">🏛️ 博物馆</button>
+                            <button class="scene-btn" data-theme="火车站">🚂 火车站</button>
+                            <button class="scene-btn" data-theme="餐厅">🍽️ 餐厅</button>
+                            <button class="scene-btn" data-theme="理发店">💈 理发店</button>
+                            <button class="scene-btn" data-theme="玩具店">🧸 玩具店</button>
+                            <button class="scene-btn" data-theme="水果店">🍎 水果店</button>
+                            <button class="scene-btn" data-theme="面包店">🍞 面包店</button>
+                            <button class="scene-btn" data-theme="药店">💊 药店</button>
+                            <button class="scene-btn" data-theme="银行">🏦 银行</button>
+                            <button class="scene-btn" data-theme="电影院">🎬 电影院</button>
+                            <button class="scene-btn" data-theme="游泳池">🏊 游泳池</button>
+                            <button class="scene-btn" data-theme="操场">⚽ 操场</button>
+                        </div>
+                        <input type="text" id="theme" placeholder="或输入自定义主题..." class="theme-input">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="title">小报标题：</label>
+                    <input type="text" id="title" placeholder="例如：走进超市、快乐医院" class="title-input">
+                </div>
+
+                <button id="generate-btn" class="generate-btn">
+                    <span class="btn-text">生成识字小报</span>
+                    <span class="loading" style="display: none;">生成中...</span>
+                </button>
+            </section>
+
+            <!-- API配置区域 -->
+            <section class="config-section">
+                <div class="input-group">
+                    <label for="api-key">API密钥 (Replicate):</label>
+                    <input type="password" id="api-key" placeholder="输入您的Replicate API Key" class="api-input">
+                    <small>API密钥将保存在本地浏览器中，不会上传到服务器</small>
+                </div>
+            </section>
+
+            <!-- 生成结果区域 -->
+            <section class="result-section" style="display: none;">
+                <h2>生成的识字小报</h2>
+                <div class="result-container">
+                    <div class="image-container">
+                        <img id="generated-image" src="" alt="生成的识字小报">
+                        <div class="image-actions">
+                            <button id="download-btn" class="download-btn">💾 下载图片</button>
+                            <button id="regenerate-btn" class="regenerate-btn">🔄 重新生成</button>
+                        </div>
+                    </div>
+                    <div class="word-list">
+                        <h3>识字清单</h3>
+                        <div id="word-display"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 历史记录区域 -->
+            <section class="history-section">
+                <h2>历史记录</h2>
+                <div id="history-list" class="history-list"></div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 儿童识字小报生成器 - 让学习更有趣</p>
+        </footer>
+    </div>
+
+    <!-- 加载提示 -->
+    <div id="loading-overlay" class="loading-overlay" style="display: none;">
+        <div class="loading-spinner"></div>
+        <p>AI正在绘制识字小报，请稍候...</p>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
